@@ -2,14 +2,6 @@ const {Telegraf} = require("telegraf");
 const validUrl = require('valid-url');
 const request = require('request');
 
-
-request({
-    url: 'http://localhost:5051/noyon',
-    method: 'POST',
-    json: {mes: 'heydude'}
-  }, function(error, response, body){
-    console.log(response.body.messge);
-  });
 if (validUrl.isUri("h")){
   
 } else {
