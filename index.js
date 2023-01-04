@@ -22,9 +22,9 @@ yt_bot.on("text",(ctx)=>{
         url: 'http://localhost:5051/noyon',
         method: 'POST',
         json: {mes: 'heydude'}
-      }, function(error, response, body){
+      }, function(error, res){
         
-        ctx.reply(response.body.messge)
+        ctx.reply(res.body.messge)
       });
     } else {
         ctx.reply('এটা কোন লিঙ্ক নাহ।');
